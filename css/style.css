@@ -1,0 +1,115 @@
+/*importamos los estilos de material bootstrap a nuestra propia hoja de estilo*/
+@import url('bootstrap.min.css');
+@import url('mdb.min.css');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+/*-----DISEÑO DE INICIO-------*/
+
+#textoPreloader{
+	/*centrado de texto*/
+	position: relative;
+	left: 15%;
+
+	
+
+	/*estilo de fuente*/
+	font-size: 100px;
+	font-family: 'Audiowide';
+	color: transparent;
+	-moz-text-stroke: .1px rgba(0,0,0,0.23);
+	-webkit-text-stroke: .1px rgba(0,0,0,0.23);
+
+	/*fondo*/
+	background-image: url(../assets/plantilla/innovabg1.jpg);
+	-moz-background-clip: border-box;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	background-repeat: no-repeat;
+	background-position: 0% 400%;
+	
+	/*animacion*/
+	animation: carga 15s;
+	animation-fill-mode: forwards;
+}
+
+#carousel{
+
+		align-content: center;
+		top: 30px;
+}
+
+.carousel-inner img{
+		height: 250px;
+}
+/*----- FIND DE DISEÑO DE INICIO-----*/
+
+/*----------DISEÑO DE SERVICIOS----------*/
+.botonServicios{
+	border-radius: 30px;
+}
+
+.contentService{
+	border-radius: 40px;
+}
+/*-------FINAL DE DISEÑO DE SERVICIOS-----------*/
+
+/*-------DISEÑO FORMULARIO DE CONTACTO------------*/
+
+#contenidoContact{
+  background: #74ebd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #74ebd5, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  border-radius: 20px;
+}
+
+#modalcontacto{
+	background-image: url(../assets/plantilla/fondo-contact.jpg);
+	background-size: cover;
+	background-position: center center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+#botonContact{
+	border-radius: 30px;
+}
+
+#botonContactEnviar{
+	border-radius: 30px;
+}
+
+.container-redes{
+	position: relative;
+	left: 45%;
+}
+
+.container-redes #facebook{
+	background-color: #3b5998;
+	border-radius: 50%;
+
+	
+}
+.container-redes #youtube{
+	background-color: #ed302f;
+	border-radius: 50%;
+	
+}
+.container-redes #twitter{
+	background-color: #55acee;
+	border-radius: 50%;
+	
+}
+
+/*------FIN DE DISEÑO FORMULARIO DE CONTACTO---------*/
+
+
+/*------keyframes de animaciones---------*/
+@keyframes carga {
+	from{
+			background-position: 0% 0%;
+		}to{
+			background-position: 400% 0%;
+			background-color: orange;
+		}
+}
